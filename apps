@@ -3,3 +3,30 @@ sudo apt-get update
 
 
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+
+在Ubuntu中，你可以使用`dpkg`命令来安装`.deb`软件包。首先，你需要下载这个包，然后使用`dpkg`进行安装。下面是具体的步骤：
+
+1. 首先，打开终端。
+
+2. 使用`wget`命令下载.deb文件。如果你的系统中没有安装`wget`，你可以使用`sudo apt install wget`来安装。下载命令如下：
+
+    ```
+    wget https://poki.com/s.deb
+    ```
+
+3. 下载完成后，使用`dpkg`命令进行安装：
+
+    ```
+    sudo dpkg -i s.deb
+    ```
+
+4. 如果在安装过程中遇到依赖问题，你可以使用以下命令来解决：
+
+    ```
+    sudo apt-get install -f
+    ```
+
+这个命令会自动检查并安装缺失的依赖。
+
+注意：在执行这些步骤之前，请确保你信任这个软件源，并且这个.deb文件是适用于你的Ubuntu版本和架构的。
