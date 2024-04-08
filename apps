@@ -1,0 +1,5 @@
+sudo sed -i 's/mirrors.ustc.edu.cn/archive.ubuntu.com/g' /etc/apt/sources.list
+sudo apt-get update
+
+
+https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
